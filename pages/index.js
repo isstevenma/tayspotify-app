@@ -16,7 +16,8 @@ export async function getStaticProps(){
     return {props: {
       albumsProp,
       updateProp
-    }
+    },
+    revalidate: 60 * 30
   }
   }
 
