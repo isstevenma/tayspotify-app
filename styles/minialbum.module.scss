@@ -1,0 +1,107 @@
+.root {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    width: 17rem;
+    height: 22rem;
+    margin: 1rem;
+    background-color: #1b1b1b;
+    border: 0.1rem solid transparent;
+    border-radius: 0.5rem;
+    &:hover {
+        transform: scale(1.02);
+        transition: all 0.5s ease-in-out;
+        box-shadow: -1px 2px 21px 12px rgba(102, 192, 180, 0.38);
+        background-color: #2b2b2b;
+    }
+    transition: all 0.5s ease-in-out;
+}
+
+.body {
+    margin: 1.3rem 0.5rem;
+}
+
+.image {
+    width: 13.5rem;
+    height: 13.5rem;
+    margin-bottom: 0.5rem;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.playCount {
+    margin: 0.2rem 0;
+    font-size: 1.2rem;
+}
+
+.dailyGain {
+    margin: 0.2rem 0;
+    color: rgba(255, 255, 255, 0.555);
+}
+
+.evermore {
+    &:hover {
+        box-shadow: -1px 2px 21px 12px rgba(224, 114, 114, 0.637);
+    }
+}
+
+.fearlesstv {
+    &:hover {
+        box-shadow: -1px 2px 21px 12px rgba(218, 193, 150, 0.596);
+    }
+}
+
+.folklore {
+    &:hover {
+        box-shadow: -1px 2px 21px 12px rgba(136, 135, 135, 0.37);
+    }
+}
+
+.eightynine {
+    &:hover {
+        box-shadow: -1px 2px 21px 12px rgba(212, 157, 198, 0.411);
+    }
+}
+
+.fearless {
+    &:hover {
+        box-shadow: -1px 2px 21px 12px rgba(209, 205, 170, 0.637);
+    }
+}
+
+.lover {
+    &:hover {
+        box-shadow: -1px 2px 21px 12px rgba(196, 80, 134, 0.637);
+    }
+}
+
+.red {
+    &:hover {
+        box-shadow: -1px 2px 21px 12px rgba(172, 33, 33, 0.452);
+    }
+}
+
+.reputation {
+    &:hover {
+        box-shadow: -1px 2px 21px 12px rgba(66, 66, 66, 0.404);
+    }
+}
+
+.taylorswift {
+    &:hover {
+        box-shadow: -1px 2px 21px 12px rgba(68, 123, 148, 0.473);
+    }
+}
+
+.speaknow {
+    &:hover {
+        box-shadow: -1px 2px 21px 12px rgba(116, 41, 60, 0.637);
+    }
+}

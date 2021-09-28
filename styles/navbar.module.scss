@@ -1,0 +1,74 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    width: 14rem;
+    height: 100%;
+    background-color: rgba(0, 0, 0);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.logoHolder {
+    margin: 1rem;
+}
+
+.navIcon {
+    padding-left: 1rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    top: -4px;
+    color: rgba(255, 255, 255, 0.5);
+    &:hover {
+        cursor: pointer;
+        color: rgba(255, 255, 255, 1);
+    }
+    margin: 0 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.icon {
+    align-items: center;
+    position: relative;
+}
+
+.iconText {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: normal;
+    padding: 0 0 0 0.5rem;
+    align-items: center;
+}
+
+.active {
+    background-color: #383838;
+    color: rgba(255, 255, 255, 1);
+    &:hover {
+        cursor: default;
+    }
+}
+
+.barContainer {
+    display: none;
+    cursor: pointer;
+    color: white;
+    margin-left: 5px;
+    display: inline-block;
+    position: fixed;
+    z-index: 9999;
+}
+
+@media (max-width: 700px) {
+    .root {
+        display: none;
+    }
+    .barContainer {
+        display: inline-block;
+    }
+}

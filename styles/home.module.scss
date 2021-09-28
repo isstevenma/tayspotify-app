@@ -1,0 +1,43 @@
+.root {
+    display: inline-block;
+    background-color: #131313;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-left: 14rem;
+}
+
+.title {
+    margin-left: 8.7rem;
+    margin-top: 3rem;
+    color: white;
+}
+
+.miniAlbumSection {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-left: 7.7rem;
+}
+
+.updateDiv{
+    color:white;
+    margin-left: 2rem;
+}
+
+@media (max-width: 700px) {
+    .root {
+        padding-left: 0;
+    }
+    .title {
+        margin-left: 4rem;
+    }
+
+    .miniAlbumSection {
+        margin-left: 3rem;
+    }
+}
