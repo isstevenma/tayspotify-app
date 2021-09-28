@@ -43,9 +43,9 @@ const Navbar = ({activePage }) => {
             name: "Red (Deluxe Edition)"
         },
         {
-            key: "5EpMjweRD573ASl7uNiHym",
-            spotify_id: "5EpMjweRD573ASl7uNiHym",
-            name: "Speak Now (Deluxe Edition)"
+            key: "6S6JQWzUrJVcJLK4fi74Fw",
+            spotify_id: "6S6JQWzUrJVcJLK4fi74Fw",
+            name: "Speak Now (Deluxe Package)"
         },
         {
             key: "43OpbkiiIxJO8ktIB777Nn",
