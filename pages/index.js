@@ -24,7 +24,7 @@ export default function Home(props) {
    const albums = props.albumsProp.albums;
    console.log(props.updateProp.updated);
   const miniAlbums = albums.map(album => (
-    <MiniAlbum {...album} />
+    <MiniAlbum {...album} key={album.key} />
   ));
   props.setActivePage("home");
   return (

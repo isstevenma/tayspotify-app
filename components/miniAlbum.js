@@ -13,7 +13,7 @@ const MiniAlbum = ({ spotify_id, name, playcount, dailygain, cover, shorthand })
                 <Link href={`/album/${spotify_id}`}>
                     <div className={styles.image}>
 
-                        <Image src={cover} height={300} width={300} />
+                        <Image src={cover} height={300} width={300} alt={shorthand} />
                     </div>
                 </Link>
                 <div className={styles.playCount}>

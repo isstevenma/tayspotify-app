@@ -68,7 +68,7 @@ const Navbar = ({activePage }) => {
             </div>
             <div className={styles.root}>
                 <div className={styles.logoHolder}>
-                    <Image src={logo} />
+                    <Image src={logo} alt="album logo" />
                 </div>
                 <Link href="/"><div className={`${styles.navIcon} ${"home" === activePage && styles.active} ${styles.homeIcon}`}><HomeIcon className={styles.icon} /><span className={styles.iconText}>Home</span></div></Link>
                 {albumIcons}

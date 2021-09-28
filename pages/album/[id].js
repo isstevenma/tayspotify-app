@@ -9,7 +9,7 @@ import { getFirestore, doc, getDoc } from "@firebase/firestore";
 
 export async function getStaticProps(){
     const db = getFirestore(app);
-    const docRef = doc(db, "albums", "album-data");
+    const docRef = doc(db, "albums", "album-data"); 
     const albumDoc = await getDoc(docRef);
     const albumsProp = albumDoc.data();
       return {props: {
@@ -43,9 +43,6 @@ const Post = ({setActivePage, albumsProp }) => {
     ));
     const router = useRouter();
     const { id } = router.query;
-    if (!id) {
-        return null;
-    }
 
 
     const album = albums.find(({ spotify_id }) => spotify_id === id);
@@ -65,7 +62,9 @@ const Post = ({setActivePage, albumsProp }) => {
     // }
     //Nvm im just gonna use nextjs' default 404 page
     useEffect(() => {
-        setActivePage(album.name)
+      if (id) {
+        setActivePage(album.name);
+      }
     });
 
     return (

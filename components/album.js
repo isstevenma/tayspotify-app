@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import styles from "../styles/album.module.scss"
-import pic from "../images/profile.jpg"
 import {numberWithCommas} from "../helper"
 
 const Album = ({ title, songs, image, shorthand }) => {
@@ -8,7 +7,7 @@ const Album = ({ title, songs, image, shorthand }) => {
         let count = numberWithCommas(song.playcount);
         let gain = numberWithCommas(song.dailygain);
         
-        return (<div className={styles.songColumn}>
+        return (<div className={styles.songColumn} key={song.key}>
             <div>
                 {song.number}
             </div>
