@@ -23,7 +23,7 @@ export async function getStaticProps(){
 
 export default function Home(props) {
    const albums = props.albumsProp.albums;
-   console.log(props.updateProp.updated);
+  //  console.log(props.updateProp.updated);
   const miniAlbums = albums.map(album => (
     <MiniAlbum {...album} key={album.key} />
   ));
@@ -34,7 +34,8 @@ export default function Home(props) {
       <title>Tayspotify</title>
     </Head>
     <div className={styles.root}>
-      <div className={styles.updateDiv}><span>Last Updated: {props.updateProp.updated}</span></div>
+      <div className={styles.updateDiv}><span>Last Updated: {props.updateProp.updated}</span>
+      <span>Counter Updated On: {props.updateProp.counterUpdated}</span></div>
       <h1 className={styles.title}>Albums</h1>
       <section className={styles.miniAlbumSection}>
         {miniAlbums}

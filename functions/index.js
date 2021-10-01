@@ -32,6 +32,10 @@ exports.updateAlbum = functions.pubsub.schedule(time).onRun(async (context) => {
         albums: result
     };
     await docRef.set(resultDoc);
+    const timeStamp = admin.firestore.Timestamp.now();
+    await db.collection("albums").doc("updateLog").update({
+      counterUpdated: `${timeStamp.toDate()}`
+    });
   }
   //gotta save it as a string [todo]
   const timeStamp = admin.firestore.Timestamp.now();
@@ -51,8 +55,10 @@ function calculateNewAlbum(oldAlbum, newAlbum) {
   for (let i = 0; i < trackCount; i++) {
     oldSongs[i].dailygain = newSongs[i].playcount - oldSongs[i].playcount;
     oldSongs[i].playcount = newSongs[i].playcount;
+    if(!(oldSongs[i].name == "Back To December" && oldSongs[i].number == 21)) {
     trackGain += oldSongs[i].dailygain;
     trackPlays += oldSongs[i].playcount;
+    }
   }
 
   oldAlbum.dailygain = trackGain;
