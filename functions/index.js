@@ -5,7 +5,7 @@ const axios = require("axios");
 const db = admin.firestore();
 const numAlbums = 10;
 const docRef = db.collection("albums").doc("album-data");
-const time = "*/30 * * * *";
+const time = "*/15 * * * *";
 
 
 exports.updateAlbum = functions.pubsub.schedule(time).onRun(async (context) => {

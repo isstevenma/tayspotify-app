@@ -31,7 +31,8 @@ export async function getStaticProps(){
             { params: { id: "1KlU96Hw9nlvqpBPlSqcTV" } },
             { params: { id: "6S6JQWzUrJVcJLK4fi74Fw" } },
             { params: { id: "43OpbkiiIxJO8ktIB777Nn" } },
-            { params: { id: "7mzrIsaAjnXihW3InKjlC3" } }         
+            { params: { id: "7mzrIsaAjnXihW3InKjlC3" } },
+            { params: { id: "6kZ42qRrzov54LcAk4onW9" } }           
           ],
           fallback: false // See the "fallback" section below
         };

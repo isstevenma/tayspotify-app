@@ -8,6 +8,11 @@ import logo from "../images/tayspotifylogo.png"
 const Navbar = ({activePage }) => {
     const albums = [
         {
+            key: "6kZ42qRrzov54LcAk4onW9",
+            spotify_id: "6kZ42qRrzov54LcAk4onW9",
+            name: "Red (Taylor's Version)"
+        },
+        {
             key: "4hDok0OAJd57SGIT8xuWJH",
             spotify_id: "4hDok0OAJd57SGIT8xuWJH",
             name: "Fearless (Taylor's Version)"
