@@ -24,6 +24,13 @@ export async function getStaticProps(){
 export default function Home(props) {
    const albums = props.albumsProp.albums;
   //  console.log(props.updateProp.updated);
+
+  albums.forEach(function(item, i){
+    if(item.name === "Red (Taylor's Version)"){
+      albums.splice(i, 1);
+      albums.unshift(item);
+    }
+  });
   const miniAlbums = albums.map(album => (
     <MiniAlbum {...album} key={album.key} />
   ));
